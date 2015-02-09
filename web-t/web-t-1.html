@@ -8,7 +8,7 @@
       @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
       @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
-      body { font-family: 'Lato'; }
+      body { font-family: 'Lato'; font-size: 20pt; }
       h1 {
         text-align: center;
       }
@@ -16,7 +16,24 @@
         font-family: 'Lato';
         font-weight: normal;
       }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-slide-content {
+        font-size: 28px;
+      }
+      .remark-code, .remark-inline-code {
+        font-family: 'Ubuntu Mono';
+        font-size: 22px;
+      }
+      .footnote.bottom {
+        position: absolute;
+        bottom: 12px;
+        left: 20px;
+      }
+      .footnote.bottom img {
+        vertical-align: bottom;
+      }
+      .small {
+        font-size: 15px;
+      }
     </style>
   </head>
   <body>
@@ -24,9 +41,13 @@
 class: center, middle
 # Web Entwicklung
 
+TSBE Frühlingssemester 2015  
+`http://smlz.github.io/web-t/`  
+
 Marco Schmalz  
 `marco.schmalz@gibb.ch`  
-
+  
+.footnote.bottom[<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>]
 ---
 # Agenda
 
@@ -68,6 +89,12 @@ Beispielcode
 def abc(a, b, c):
     """Docstring tatütata"""
     pass
+    
+    
+>>> abc(1) + 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'abc' is not defined
 ```
 
 ---
@@ -76,9 +103,13 @@ def abc(a, b, c):
 ```HTML
 <!doctype html>
 <html>
-<head></head>
-<body>
-</body>
+  <head>
+    <title>Meine erste Seite</title>
+  </head>
+  <body>
+    <h1>Meine erste super Seite</h1>
+    <p>Lorem ipsum tatuetata. Ha!</p>
+  </body>
 </html>
 ```
 
