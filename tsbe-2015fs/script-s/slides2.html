@@ -199,6 +199,50 @@ Erweitern sie ihr Script von vorher:
   * Führen sie die Datei `velofahren` aus.
   * `velofahren` soll "KLAPPERKLAPPER" auf dem Bildschirm ausgeben
 
+---
+# Schleifen - for
+
+Beispiel:
+```bash
+for file in *.JPEG
+do
+  echo mv "$file" "${file/.JPEG/.jpg}"
+done
+```
+
+* Dateinamen-Komplementierung mit * (Stern)
+
+---
+# Übung
+
+Verschieben sie alle PNG-Bilder im aktuellen Verzeichnis in ein Unterverzeichnis mit den Name `bilder`.
+
+---
+# Schleifen - while
+
+Beispiel:
+```bash
+while true
+do
+  echo "Endlosschleife"
+done
+```
+* Bedinung gleich wie bei **if**
+
+---
+#  Übung
+
+Geben sie mit einem Skript die endlose Fibonacci-Reihe aus:
+
+* 1
+* 1
+* 2
+* 3 
+* 5
+* 8
+* 13
+* 21
+* ...
 
   </textarea>
     <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript">
