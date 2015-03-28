@@ -309,11 +309,11 @@ Point.prototype.dist = function () {
 Wenn man das `var` vergisst, kreiert man automatisch eine globale Variable.
 
 ```JavaScript
-myname = "Daniel"; // global
-window.myname = "Daniel"; // global
+myname = "Hans"; // global
+window.myname = "Kurt"; // global
 
 // Ausserhalb einer Funktion
-var myname = "Daniel"; // global
+var myname = "Gabi"; // global
 ```
 
 ---
@@ -369,6 +369,8 @@ http://www.codecademy.com/en/tracks/javascript
 * Ein JavaScript Programmier-Framework, um im Browser dynamische Webseiten zu erstellen.
 
 * Open Source (Von Google unerstützt)
+
+* https://angularjs.org/
 ---
 # Wieso AngularJS
 
@@ -502,9 +504,14 @@ In der View (HTML) das Attribut `ng-model` verwenden:
 </div>
 ```
 ---
+# Beispiel
+
+http://plnkr.co/edit/S99nTa2iTM0oKEkLerE9?p=info
+
+---
 # Angular template
 
-```javascript
+```HTML
 <!DOCTYPE html>
 <html>
 <head>
@@ -513,16 +520,16 @@ In der View (HTML) das Attribut `ng-model` verwenden:
   <script data-require="angular.js@1.3.x" data-semver="1.3.6"
   src="https://code.angularjs.org/1.3.6/angular.js"></script>
   <script>
-  var app = angular.module('itApp', []);
-  app.controller('TodoController', TodoController);
-  function TodoController() {
-    var self = this;
-    self.name = "Hans";
-  }  
+    var app = angular.module('app', []);
+    app.controller('MeinController', MeinController);
+    function MeinController() {
+      var self = this;
+      self.name = "Hans";
+    }  
   </script>
 </head>
-<body ng-app="itApp">
-  <div ng-controller="TodoController as ctrl">
+<body ng-app="app">
+  <div ng-controller="MeinController as ctrl">
     <p ng-bind="ctrl.name"></p>
     <p>{{ctrl.name}}</p>
   </div>
