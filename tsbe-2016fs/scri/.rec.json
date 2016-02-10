@@ -1,0 +1,8 @@
+{
+  "index_file": "index.html",
+  "index_file_cursor": "<!-- REC-SESSIONS -->",
+  "index_entry_template": "<a href=\"/console.html?data=/tsbe-2016fs/scri/{filename}\"><span class=\"glyphicon glyphicon-console\"></span> {title}</a><br/>\n          ",
+  "session_file_prefix": "session_2_",
+  "commit": true,
+  "push": true
+}
