@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Console</title>
+<meta charset="utf-8"/>
+<link href="/assets/application.css" media="all" rel="stylesheet" />
+<link href="/assets/jquery-ui-1.11.4.custom.min.css" media="all" rel="stylesheet" />
+<link href="/assets/scripts.css" media="all" rel="stylesheet" />
+</head>
+<body>
+<script src="/assets/jquery-2.0.0.min.js"></script>
+<script src="/assets/jquery-ui-1.11.4.custom.min.js"></script>
+<script src="/assets/jquery.fullscreen-min.js"></script>
+<script src="/assets/term.js"></script>
+<script src="/assets/showterm.js"></script>
+<script src="/assets/application.js"></script>
+<script>
+(function() {
+    $.urlParam = function(name){
+      	var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
+      	if (!results) { return 0; }
+      	return results[1] || 0;
+    }
+    var dataFile = $.urlParam("data");
+
+    if (dataFile !== 0) {
+        $.get(dataFile, function(data) {$(document.body).showterm(data)}).fail(function() {
+            alert("Failed to fetch '" + dataFile + "'");
+        });
+    } else {
+      alert("No 'data' URL-parameter supplied");
+    }
+})();
+</script>
+</body>
+</html>
+
