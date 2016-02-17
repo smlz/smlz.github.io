@@ -11,6 +11,7 @@
 <script src="/assets/jquery-2.0.0.min.js"></script>
 <script src="/assets/jquery-ui-1.11.4.custom.min.js"></script>
 <script src="/assets/jquery.fullscreen-min.js"></script>
+<script src="/assets/utf8.js"></script>
 <script src="/assets/term.js"></script>
 <script src="/assets/showterm.js"></script>
 <script src="/assets/application.js"></script>
@@ -24,7 +25,10 @@
     var dataFile = $.urlParam("data");
 
     if (dataFile !== 0) {
-        $.get(dataFile, function(data) {$(document.body).showterm(data)}).fail(function() {
+        $.get(dataFile, function(data) {
+            data.script = utf8.decode(atob(data.script));
+            $(document.body).showterm(data);
+        }).fail(function() {
             alert("Failed to fetch '" + dataFile + "'");
         });
     } else {

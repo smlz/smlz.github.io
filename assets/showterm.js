@@ -12,9 +12,6 @@ $.fn.showterm = function (options) {
         timings = options.timings || [[0, 0]]
         timings[0][0] = 0
         script = options.script || '';
-        console.log(script);
-        script = atob(script);
-        console.log(script);
         start = 0;
         position = options.position || 0;
         stopped = options.stopped;
@@ -37,7 +34,6 @@ $.fn.showterm = function (options) {
         Terminal.cursorBlink = false;
         stopped = false;
         position = start = 0;
-        console.log(options.lines);
     }
 
     function tick() {
