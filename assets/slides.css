@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+body {
+  font-family: 'Lato';
+}
+.remark-slide-content {
+  padding: 0.5em 3em 0.5em 3em;
+}
+h1 {
+  text-align: center;
+  font-size: 45px;
+}
+h1, h2, h3 {
+  font-family: 'Lato';
+  font-weight: normal;
+}
+.remark-slide-content {
+  font-size: 25px;
+}
+.remark-code, .remark-inline-code {
+  font-family: 'Ubuntu Mono';
+  font-size: 20px;
+}
+.footnote.bottom {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+}
+.footnote.bottom img {
+  vertical-align: baseline;
+}
+.xsmall{
+  font-size: 12px;
+}
+.small {
+  font-size: 15px;
+}
+.smaller {
+  font-size: 20px;
+}
+.remark-slide-number {
+  font-size: 20px;
+  opacity: 1;
+}
+h4 {
+  margin-bottom: 5px;
+}
+h4 + pre {
+  margin-top: 5px;
+}
+td, th{
+  border: solid gray 2px;
+  padding: 3px;
+  text-align: left;
+}
+td:empty {
+  padding: 0;
+}
+.center table {
+  width: 700px;
+  border-collapse: collapse;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
