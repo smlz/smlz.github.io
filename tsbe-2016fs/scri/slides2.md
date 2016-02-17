@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<title>Web-Programmieren 2</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link rel="stylesheet" href="/assets/slides.css">
-</head>
-<body>
-<textarea id="source">
 class: center, middle
 # Web-Programmieren 2
 
@@ -43,8 +34,3 @@ layout:false
 1. Repetition HTML/CSS
 
 2. ...
-</textarea>
-<script src="/assets/remark-latest.min.js" type="text/javascript"></script>
-<script src="/assets/slides.js" type="text/javascript"></script>
-</body>
-</html>
