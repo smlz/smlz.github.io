@@ -1,0 +1,2 @@
+python3 -m http.server
+pdfjam --suffix 2up --nup 1x2 --frame true --scale 0.85 --delta "0cm 1cm" ~/web-t-1.pdf
