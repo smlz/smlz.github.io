@@ -1,17 +1,29 @@
 body {
-  background: black;
+  background: #3e3e3e;
   color: white;
   margin: 0;
   padding: 0;
   font-family: monospace;
+  font-size: 10pt;
   white-space: nowrap;
   overflow: hidden
 }
 div.terminal {
   line-height: 120%;
+  width: 640px;
+  height: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -246px;
+  margin-left: -326px;
+  border: 6px darkgray double;
 }
 .terminal-cursor {
   background: rgba(255, 255, 255, 0.4);
+}
+.showterm-controls {
+  z-index: 1;
 }
 a {
   color: white;
