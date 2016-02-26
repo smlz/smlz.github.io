@@ -70,7 +70,12 @@ layout:false
 * Keine Threads, Event-Basiert
 
 ---
+class: center, middle
+# Grösstes Feature
 
+## &nbsp;
+
+---
 class:center, middle
 # Grösstes Feature
 
