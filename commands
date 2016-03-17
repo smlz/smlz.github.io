@@ -1,3 +1,3 @@
 python3 -m http.server
-# Chrome with resolution 1024x600
-pdfjam --suffix 2up --nup 1x2 --frame true --scale 0.85 --delta "0cm 1cm" ~/web-t-1.pdf
+decktape automatic --size=800x600 http://localhost:8000/tsbe-2016fs/scri/slides.html?source=slides3.md out.pdf
+pdfjam --suffix 2up --nup 1x2 --frame true --scale 0.85 --delta "0cm 1cm" out.pdf --outfile slides3.pdf
