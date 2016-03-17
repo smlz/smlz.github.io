@@ -11,12 +11,6 @@ Marco Schmalz
 
 .footnote.bottom.smaller[<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/assets/cc88x31.png" width="88" height="31" /></a>]
 ---
-layout: true
-#fsdf
-.footnote.bottom[<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/assets/cc88x31.png" /></a>]
-
----
-layout:false
 ## Kursübersicht
 
 1. HTML und CSS, Bootstrap
@@ -337,7 +331,7 @@ http://www.codecademy.com/en/tracks/javascript
   function TodoController() {
     var self = this;
     self.name = "Hans";
-  }  
+  }
   </script>
 </head>
 <body ng-app="itApp">
