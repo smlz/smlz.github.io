@@ -35,7 +35,7 @@ Marco Schmalz
 
 4. Projektarbeit
 ---
-# Funktionen
+# Funktionen definieren
 
 Funktionen können auf zwei Arten definiert werden.
 
@@ -53,7 +53,7 @@ var cube = function(x) {
 }
 ```
 ---
-# Funktionen in JavaScript
+# First-Class Functions
 
 Man kann eine Funktion als Argumente übergeben:
 ```JavaScript
@@ -66,7 +66,7 @@ setTimeout(sayHello, 1000);
 ```
 
 ---
-# Funktionen in JavaScript (cont.)
+# First-Class Functions (cont.)
 
 ... oder aus einer Funktion zurückgeben:
 ```JavaScript
@@ -88,8 +88,7 @@ console.log(f(2));      // -> 7
 Normale Funktionen können, wenn mit `new` aufgerufen, als Konstruktoren dienen.
 ```JavaScript
 function Point(x, y) { 
-    var self = this;
-    // 'this' zeigt auf die neue Instanz
+    var self = this; // 'this' zeigt auf die neue Instanz
     self.x = x;
     self.y = y; 
     self.dist = function() {
@@ -101,6 +100,32 @@ function Point(x, y) {
 var p = new Point(3, 4);
 console.log(p.dist());  // -> 5
 ```
+ * Konstruktor-Funktionen werden per Konvention gross geschrieben.
+---
+# Probleme mit this
+
+Warum die folgende Zeile?
+```JavaScript
+var self = this
+```
+
+`this` kann verloren gehen, zum beispiel in call-back-Funktionen.
+
+Variablen-Referenzen innerhalb von verschachtelten Funktionen sind dahingegen immer eindeutig.
+---
+# "Module"
+## Self-evaluating anonymous functions
+```JavaScript
+(function() {
+    function sayHello(name) {
+        console.log("Hello " + name);
+    }
+    var name = "Wilfriede";
+    sayHello(name);
+})();
+```
+
+Hilfvariablen und Hilfsfunktionen werdem so nicht zu globalen Variablen.
 ---
 class: center
 # Codeacademy Tutorial zu Funktionen
