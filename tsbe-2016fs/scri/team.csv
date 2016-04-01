@@ -1,6 +1,131 @@
 Name,Vorname,Email,Geburtstag,Abteilung,Leitende Funktion,Gruppen
-Meier,Heidi,h.meier@hsv.ch,12.3.1974,HR,ja,"GL, HR, Mitarbeiterrat"
-Hauser,Peter,p.hauser@hsv.ch,21.4.1962,Entwicklung,nein,Entwicklung
-Gündogan,Tacip,t.guendogan@hsv.ch,,Marketing,nein,Mitarbeiterrat
-Gonzalez,Maria Pamela,m.gonzalez@hsv.ch,1.2.1991,Entwicklung,ja,"GL, Entwicklung"
-Hayes,Pete,p.hayes@hsv.ch,3.6.1983,Verkauf,nein,Verkauf
+Meier,Heidi,h.meier@hsv.ch,12.3.1974,HR,ja,
+Hauser,Peter,p.hauser@hsv.ch,21.4.1962,Entwicklung,nein,Somopho
+Gündogan,Tacip,t.guendogan@hsv.ch,3.12.1944,Marketing,nein,Mitarbeiterrat
+Gonzalez,Maria Pamela,m.gonzalez@hsv.ch,1.2.1991,Entwicklung,ja,GL
+Hayes,Pete,p.hayes@hsv.ch,3.6.1983,Verkauf,nein,
+Realmuto,Cassidy,c.realmuto@hsv.ch,18.10.1941,Entwicklung,nein,
+Ream,Cassie,c.ream@hsv.ch,1.12.1981,HR,nein,
+Reamer,Cassondra,c.reamer@hsv.ch,7.7.1948,Entwicklung,nein,Lehre
+Reames,Cassy,c.reames@hsv.ch,22.5.1956,Verkauf,ja,
+Reams,Catalina,c.reams@hsv.ch,27.8.1945,Entwicklung,nein,
+Reamy,Catarina,c.reamy@hsv.ch,8.6.1991,Verkauf,nein,Mitarbeiterrat
+Reando,Caterina,c.reando@hsv.ch,2.11.1940,HR,nein,
+Reaney,Catharine,c.reaney@hsv.ch,15.7.1972,HR,nein,
+Reano,Catherin,c.reano@hsv.ch,7.10.1960,Marketing,ja,Somopho
+Reaollano,Catherina,c.reaollano@hsv.ch,21.6.1996,Verkauf,nein,
+Reap,Catherine,c.reap@hsv.ch,13.4.1991,Marketing,ja,GL
+Reaper,Cathern,c.reaper@hsv.ch,19.1.1989,HR,nein,
+Rear,Catheryn,c.rear@hsv.ch,19.1.1978,Entwicklung,nein,
+Rearden,Cathey,c.rearden@hsv.ch,1.9.1968,HR,nein,
+Reardon,Cathi,c.reardon@hsv.ch,11.1.1965,Entwicklung,nein,"Mitarbeiterrat, Sport"
+Rearick,Cathie,c.rearick@hsv.ch,19.2.1973,Entwicklung,nein,
+Reary,Cathleen,c.reary@hsv.ch,24.10.1971,Verkauf,nein,
+Reas,Cathrine,c.reas@hsv.ch,4.3.1953,Verkauf,nein,
+Rease,Cathryn,c.rease@hsv.ch,10.5.1967,Marketing,nein,Sport
+Reaser,Cathy,c.reaser@hsv.ch,23.9.1999,Marketing,nein,
+Reash,Catina,c.reash@hsv.ch,16.3.1969,Marketing,ja,
+Reasinger,Catrice,c.reasinger@hsv.ch,26.10.1980,Entwicklung,ja,
+Reasner,Catrina,c.reasner@hsv.ch,21.4.1983,Verkauf,nein,
+Reason,Cayla,c.reason@hsv.ch,22.1.1952,Marketing,nein,Sport
+Reasoner,Cecelia,c.reasoner@hsv.ch,2.11.1957,Verkauf,nein,
+Reasonover,Cecil,c.reasonover@hsv.ch,19.8.1973,HR,ja,Mitarbeiterrat
+Reasons,Cecil,c.reasons@hsv.ch,3.1.1979,HR,nein,
+Reasor,Cecila,c.reasor@hsv.ch,9.5.1985,Entwicklung,ja,
+Reategui,Cecile,c.reategui@hsv.ch,25.9.1974,Entwicklung,nein,Sport
+Reath,Cecilia,c.reath@hsv.ch,22.9.1971,HR,ja,"GL, HR, Mitarbeiterrat"
+Reatherford,Cecille,c.reatherford@hsv.ch,12.9.1942,Entwicklung,nein,
+Reau,Cecily,c.reau@hsv.ch,20.10.1954,HR,nein,
+Reauish,Cedric,c.reauish@hsv.ch,1.2.1950,HR,nein,Somopho
+Reaume,Cedrick,c.reaume@hsv.ch,9.1.1980,Marketing,ja,
+Reaux,Celena,c.reaux@hsv.ch,8.7.1971,Entwicklung,nein,Lehre
+Reavely,Celesta,c.reavely@hsv.ch,15.9.1975,HR,nein,"Sport, Lehre"
+Reaver,Celeste,c.reaver@hsv.ch,20.6.1991,Verkauf,nein,
+Reaves,Celestina,c.reaves@hsv.ch,25.5.1964,HR,nein,"Mitarbeiterrat, Somopho"
+Reavis,Celestine,c.reavis@hsv.ch,3.4.1997,Verkauf,nein,
+Reavish,Celia,c.reavish@hsv.ch,15.10.1982,Entwicklung,ja,
+Reavley,Celina,c.reavley@hsv.ch,7.10.1956,Marketing,nein,
+Reay,Celinda,c.reay@hsv.ch,19.9.1947,Verkauf,nein,Somopho
+Reazer,Celine,c.reazer@hsv.ch,2.9.1990,Entwicklung,nein,
+Rebar,Celsa,c.rebar@hsv.ch,3.1.1987,HR,ja,
+Rebeck,Ceola,c.rebeck@hsv.ch,4.1.1944,Entwicklung,ja,Mitarbeiterrat
+Rebeiro,Cesar,c.rebeiro@hsv.ch,9.2.1961,Verkauf,nein,
+Rebel,Chad,c.rebel@hsv.ch,4.12.1973,HR,ja,
+Rebeles,Chadwick,c.rebeles@hsv.ch,28.7.1949,Verkauf,nein,
+Rebell,Chae,c.rebell@hsv.ch,2.6.1967,Verkauf,ja,
+Rebello,Chan,c.rebello@hsv.ch,7.2.1965,Entwicklung,ja,GL
+Rebelo,Chana,c.rebelo@hsv.ch,27.8.1950,Marketing,ja,
+Reber,Chance,c.reber@hsv.ch,11.10.1945,Marketing,nein,
+Rebera,Chanda,c.rebera@hsv.ch,16.5.1993,HR,ja,
+Rebert,Chandra,c.rebert@hsv.ch,8.11.1948,Verkauf,nein,Sport
+Rebholz,Chanel,c.rebholz@hsv.ch,17.1.1965,Verkauf,ja,Sport
+Rebich,Chanell,c.rebich@hsv.ch,14.10.1978,HR,nein,Sport
+Rebick,Chanelle,c.rebick@hsv.ch,12.11.1944,Entwicklung,nein,
+Rebik,Chang,c.rebik@hsv.ch,1.10.1987,Verkauf,nein,
+Rebillard,Chang,c.rebillard@hsv.ch,17.3.1955,HR,nein,
+Rebman,Chantal,c.rebman@hsv.ch,15.3.1986,Entwicklung,nein,
+Rebold,Chantay,c.rebold@hsv.ch,15.3.1950,Marketing,ja,
+Rebollar,Chante,c.rebollar@hsv.ch,13.4.1975,Verkauf,ja,
+Rebolledo,Chantel,c.rebolledo@hsv.ch,28.6.1941,HR,nein,Mitarbeiterrat
+Rebolloso,Chantell,c.rebolloso@hsv.ch,18.10.1997,HR,nein,
+Rebuck,Chantelle,c.rebuck@hsv.ch,27.12.1993,Entwicklung,nein,
+Rebuldela,Chara,c.rebuldela@hsv.ch,10.6.1977,Marketing,ja,
+Reburn,Charis,c.reburn@hsv.ch,10.7.1982,Verkauf,nein,
+Rebusi,Charise,c.rebusi@hsv.ch,12.2.1941,Marketing,nein,
+Recalde,Charissa,c.recalde@hsv.ch,25.11.1940,Verkauf,nein,Somopho
+Recar,Charisse,c.recar@hsv.ch,12.6.1946,Verkauf,ja,
+Recchia,Charita,c.recchia@hsv.ch,8.6.1980,Verkauf,nein,
+Recek,Charity,c.recek@hsv.ch,28.10.1966,Entwicklung,ja,
+Recendez,Charla,c.recendez@hsv.ch,13.10.1968,Entwicklung,nein,
+Rech,Charleen,c.rech@hsv.ch,25.4.1954,HR,ja,Mitarbeiterrat
+Rechel,Charlena,c.rechel@hsv.ch,17.5.1969,Entwicklung,nein,
+Recher,Charlene,c.recher@hsv.ch,23.8.1975,HR,nein,
+Rechichi,Charles,c.rechichi@hsv.ch,27.7.1984,Marketing,nein,
+Rechkemmer,Charles,c.rechkemmer@hsv.ch,15.8.1967,Entwicklung,nein,
+Recht,Charlesetta,c.recht@hsv.ch,1.12.1957,Entwicklung,nein,
+Rechtzigel,Charlette,c.rechtzigel@hsv.ch,12.1.1960,Entwicklung,nein,
+Recidivi,Charley,c.recidivi@hsv.ch,17.9.1963,HR,nein,
+Recine,Charlie,c.recine@hsv.ch,28.11.1995,Entwicklung,nein,
+Recinos,Charlie,c.recinos@hsv.ch,23.5.1988,Entwicklung,ja,
+Recio,Charline,c.recio@hsv.ch,26.5.1990,Verkauf,nein,
+Reck,Charlott,c.reck@hsv.ch,27.7.1996,Marketing,nein,
+Reckard,Charlotte,c.reckard@hsv.ch,26.10.1974,Entwicklung,nein,"Sport, Lehre"
+Reckart,Charlsie,c.reckart@hsv.ch,12.1.1960,Entwicklung,nein,
+Recker,Charlyn,c.recker@hsv.ch,19.8.1991,Verkauf,ja,"GL, Somopho, Sport"
+Reckers,Charmain,c.reckers@hsv.ch,9.8.1948,Marketing,nein,
+Reckleben,Charmaine,c.reckleben@hsv.ch,23.5.1997,Entwicklung,ja,"Lehre, Sport"
+Reckley,Charolette,c.reckley@hsv.ch,17.4.1947,Verkauf,nein,
+Reckling,Chas,c.reckling@hsv.ch,4.4.1965,Marketing,nein,Sport
+Reckner,Chase,c.reckner@hsv.ch,9.11.1997,Verkauf,nein,
+Recksiek,Chasidy,c.recksiek@hsv.ch,28.1.1965,Entwicklung,nein,
+Recla,Chasity,c.recla@hsv.ch,18.11.1974,Marketing,nein,
+Recor,Chassidy,c.recor@hsv.ch,6.12.1986,Entwicklung,nein,
+Record,Chastity,c.record@hsv.ch,1.2.1942,Verkauf,nein,
+Records,Chau,c.records@hsv.ch,28.11.1971,HR,nein,
+Recore,Chauncey,c.recore@hsv.ch,26.9.1946,Entwicklung,nein,
+Rectenwald,Chaya,c.rectenwald@hsv.ch,22.8.1982,Verkauf,nein,
+Rector,Chelsea,c.rector@hsv.ch,18.10.1941,HR,ja,
+Recuparo,Chelsey,c.recuparo@hsv.ch,1.12.1981,Marketing,ja,
+Recupero,Chelsie,c.recupero@hsv.ch,7.7.1948,Verkauf,nein,
+Reczek,Cher,c.reczek@hsv.ch,22.5.1956,HR,nein,
+Red,Chere,c.red@hsv.ch,27.8.1945,HR,nein,
+Reda,Cheree,c.reda@hsv.ch,8.6.1991,HR,nein,
+Redal,Cherelle,c.redal@hsv.ch,2.11.1940,Verkauf,nein,
+Redbird,Cheri,c.redbird@hsv.ch,15.7.1972,Verkauf,nein,
+Redburn,Cherie,c.redburn@hsv.ch,7.10.1960,HR,nein,Sport
+Redcay,Cherilyn,c.redcay@hsv.ch,21.6.1996,Verkauf,nein,
+Redcross,Cherise,c.redcross@hsv.ch,13.4.1991,Entwicklung,ja,
+Redd,Cherish,c.redd@hsv.ch,19.1.1989,Marketing,nein,
+Reddekopp,Cherly,c.reddekopp@hsv.ch,19.1.1978,Marketing,nein,Mitarbeiterrat
+Reddell,Cherlyn,c.reddell@hsv.ch,1.9.1968,Entwicklung,nein,
+Redden,Cherri,c.redden@hsv.ch,11.1.1965,Marketing,nein,
+Redder,Cherrie,c.redder@hsv.ch,19.2.1973,Verkauf,ja,"GL, Sport"
+Reddic,Cherry,c.reddic@hsv.ch,24.10.1971,Marketing,nein,Lehre
+Reddick,Cherryl,c.reddick@hsv.ch,4.3.1953,Entwicklung,nein,Lehre
+Reddicks,Chery,c.reddicks@hsv.ch,10.5.1967,HR,nein,
+Reddig,Cheryl,c.reddig@hsv.ch,23.9.1999,HR,nein,
+Reddin,Cheryle,c.reddin@hsv.ch,16.3.1969,HR,nein,
+Redding,Cheryll,c.redding@hsv.ch,26.10.1980,Entwicklung,ja,"Mitarbeiterrat, GL"
+Reddinger,Chester,c.reddinger@hsv.ch,21.4.1983,Marketing,nein,
+Reddington,Chet,c.reddington@hsv.ch,22.1.1952,Marketing,nein,Lehre
+Reddish,Cheyenne,c.reddish@hsv.ch,2.11.1957,Entwicklung,ja,
