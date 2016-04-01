@@ -1,0 +1,6 @@
+Name,Vorname,Email,Geburtstag,Abteilung,Leitende Funktion,Gruppen
+Meier,Heidi,h.meier@hsv.ch,12.3.1974,HR,ja,"GL, HR, Mitarbeiterrat"
+Hauser,Peter,p.hauser@hsv.ch,21.4.1962,Entwicklung,nein,Entwicklung
+Gündogan,Tacip,t.guendogan@hsv.ch,,Marketing,nein,Mitarbeiterrat
+Gonzalez,Maria Pamela,m.gonzalez@hsv.ch,1.2.1991,Entwicklung,ja,"GL, Entwicklung"
+Hayes,Pete,p.hayes@hsv.ch,3.6.1983,Verkauf,nein,Verkauf
