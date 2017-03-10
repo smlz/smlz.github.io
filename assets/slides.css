@@ -1,7 +1,27 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 @import url(/assets/Lato-Regular.ttf);
 @import url(/assets/Lato-Bold.ttf);
+
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Mono'), local('UbuntuMono-Regular'), url(/assets/UbuntuMono-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Mono Bold'), local('UbuntuMono-Bold'), url(/assets/UbuntuMono-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Ubuntu Mono Italic'), local('UbuntuMono-Italic'), url(/assets/UbuntuMono-Italic.woff2) format('woff2');
+}
 
 body {
   font-family: 'Lato';
