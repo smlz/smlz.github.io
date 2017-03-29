@@ -49,6 +49,8 @@ def main(command='bash'):
     session_fname = get_session_file_name(wd, config.get('session_file_prefix', 'session_'))
     index_fname = config.get('index_file', 'index.html')
 
+    session_dir = os.path.dirname(session_fname)
+
     with tempfile.NamedTemporaryFile() as logfile,  \
          tempfile.NamedTemporaryFile() as timingfile, \
          open(pjoin(wd, session_fname), 'w') as outfile, \
@@ -57,7 +59,8 @@ def main(command='bash'):
         proc = subprocess.Popen(['script', '--flush', '--quiet',
                                  '--command={}'.format(command),
                                  '--timing={}'.format(timingfile.name),
-                                 logfile.name])
+                                 logfile.name],
+                                cwd=pjoin(wd, session_dir))
         proc.wait()
         columns = int(subprocess.check_output(['tput', 'cols']).strip())
         lines = int(subprocess.check_output(['tput', 'lines']).strip())
