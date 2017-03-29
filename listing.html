@@ -44,7 +44,7 @@ pre {
         filename = filename[filename.length - 1];
         document.getElementById('title').innerHTML = "<a href=\"" + dataFile + "\" download>" + filename + "</a>";
         $.get(dataFile, function(data) {
-            document.getElementById('code').innerHTML = data;
+            document.getElementById('code').innerHTML = data.replace(/</g, "&lt;");
             $('pre code').each(function(i, block) {
               hljs.highlightBlock(block);
             });
