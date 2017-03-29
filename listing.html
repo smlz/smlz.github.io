@@ -5,21 +5,28 @@
 <meta charset="utf-8"/>
 <link href="/assets/application.css" media="all" rel="stylesheet" />
 <link href="/assets/jquery-ui-1.11.4.custom.min.css" media="all" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/bootstrap.min.css">
 <link rel="stylesheet" href="/assets/highlight.min.css">
 <style>
 body {
   margin:0;
   padding:0;
+  background-color: #F0F0F0;
 }
 h1 {
   margin: 0;
-  padding: 10px 25px;
+  padding: 10px;
   background-color: lightgray;
   font-family: monospace;
   font-size: 25px;
 }
 pre {
-  padding: 10px 25px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+code {
+  padding: 10px 10px !important;
 }
 </style>
 </head>
@@ -46,13 +53,13 @@ pre {
         $.get(dataFile, function(data) {
             document.getElementById('code').innerHTML = data.replace(/</g, "&lt;");
             $('pre code').each(function(i, block) {
-              hljs.highlightBlock(block);
+                hljs.highlightBlock(block);
             });
         }).fail(function() {
             alert("Failed to fetch '" + dataFile + "'");
         });
     } else {
-      alert("No 'data' URL-parameter supplied");
+        alert("No 'data' URL-parameter supplied");
     }
 })();
 </script>
