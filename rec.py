@@ -115,7 +115,7 @@ def main(command='bash'):
         files_cursor = config.get('files_cursor',
                                   '<!-- REC-FILES -->')
         files_templ = config.get('files_template',
-                                 '<a href="{path}>{filename}</a><br/>"')
+                                 '<a href="{path}">{filename}</a><br/>')
 
         data = indexfile.read()
 
