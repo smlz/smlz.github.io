@@ -2,9 +2,11 @@
 #from __future__ import print_function, division, absolute_import, unicode_literals
 
 import base64
+import collections
 import glob
 import json
 import os
+import pyinotify
 import subprocess
 import sys
 import tempfile
@@ -51,10 +53,18 @@ def main(command='bash'):
 
     session_dir = os.path.dirname(session_fname)
 
+    git_root = subprocess.check_output(['git', 'rev-parse',
+                                        '--show-toplevel'])
+    git_root = str(git_root, encoding='utf-8').strip()
+    server_path = '/' + os.path.relpath(wd, start=git_root) + '/'
+
     with tempfile.NamedTemporaryFile() as logfile,  \
          tempfile.NamedTemporaryFile() as timingfile, \
          open(pjoin(wd, session_fname), 'w') as outfile, \
          open(pjoin(wd, index_fname), 'r+', encoding='UTF-8') as indexfile:
+
+        wm = pyinotify.WatchManager()
+        wm.add_watch(pjoin(wd, session_dir), pyinotify.IN_CLOSE_WRITE)
 
         proc = subprocess.Popen(['script', '--flush', '--quiet',
                                  '--command={}'.format(command),
@@ -62,6 +72,17 @@ def main(command='bash'):
                                  logfile.name],
                                 cwd=pjoin(wd, session_dir))
         proc.wait()
+
+        events = []
+        notifier = pyinotify.Notifier(wm, events.append)
+        if notifier.check_events(0):
+            notifier.read_events()
+            notifier.process_events()
+        wm.close()
+        touched_files = [e.name for e in events
+                         if os.path.isfile(pjoin(wd, session_dir, e.name))]
+        touched_files = list(collections.OrderedDict.fromkeys(touched_files))
+
         columns = int(subprocess.check_output(['tput', 'cols']).strip())
         lines = int(subprocess.check_output(['tput', 'lines']).strip())
         data = {
@@ -74,33 +95,46 @@ def main(command='bash'):
         }
         json.dump(data, outfile)
 
-        indexcontents = indexfile.read()
-
         session_title = input("Session title: ")
         if not session_title:
             session_title = session_fname.replace('.json', '')\
                                          .replace('_', ' ')\
                                          .capitalize()
-        cursor = config.get('index_file_cursor', '<!-- REC-SESSIONS -->')
-        if 'index_entry_template' in config:
-            link_template = config['index_entry_template']
-        else:
-            git_root = subprocess.check_output(['git', 'rev-parse',
-                                                '--show-toplevel'])
-            git_root = str(git_root, encoding='utf-8').strip()
-            server_path = '/' + os.path.relpath(wd, start=git_root) + '/'
-            link_template = '<a href="/console.html?data=' + server_path \
-                            + '{filename}">{title}</a><br/>'
+        added_files = []
+        for f in touched_files:
+            answer = input("Add file '{}'? [Y/n] ".format(f)).strip().lower()
+            if answer == '' or answer[0] == 'y':
+                added_files.append(f)
 
-        link = link_template.format(filename=session_fname, title=session_title)
-        indexcontents = indexcontents.replace(cursor, link + cursor)
+        term_session_cursor = config.get('index_file_cursor',
+                                         '<!-- REC-TERM-SESSION -->')
+        term_session_templ = config.get('term_session_template',
+                                        '<a href="/console.html?data=' \
+                                        + server_path \
+                                        + '{filename}">{title}</a><br/>')
+        files_cursor = config.get('files_cursor',
+                                  '<!-- REC-FILES -->')
+        files_templ = config.get('files_template',
+                                 '<a href="{path}>{filename}</a><br/>"')
+
+        data = indexfile.read()
+
+        term_session = term_session_templ.format(filename=session_fname,
+                                                 title=session_title)
+        data = data.replace(term_session_cursor,
+                            term_session + term_session_cursor)
+        files = ''.join(files_templ.format(filename=f,
+                                           path=pjoin(session_dir, f))
+                          for f in added_files)
+        data = data.replace(files_cursor, files + files_cursor)
         indexfile.seek(0)
         indexfile.truncate()
-        indexfile.write(indexcontents)
+        indexfile.write(data)
 
     if config.get('commit', False):
         subprocess.call(['git', 'add', pjoin(wd, index_fname),
-                         pjoin(wd, session_fname)])
+                         pjoin(wd, session_fname)]\
+                         + [pjoin(wd, session_dir, f) for f in added_files])
         subprocess.call(['git', 'commit', '-m',
                          'Auto-commit: ' + session_title])
         if config.get('push', False):
