@@ -42,9 +42,8 @@ pre {
     if (dataFile !== 0) {
         var filename = dataFile.split('/');
         filename = filename[filename.length - 1];
-        document.getElementById('title').innerHTML = "<a href=\"" + dataFile + "\">" + filename + "</a>";
+        document.getElementById('title').innerHTML = "<a href=\"" + dataFile + "\" download>" + filename + "</a>";
         $.get(dataFile, function(data) {
-            // = utf8.decode(atob(data));
             document.getElementById('code').innerHTML = data;
             $('pre code').each(function(i, block) {
               hljs.highlightBlock(block);
