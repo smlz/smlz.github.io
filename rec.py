@@ -39,7 +39,7 @@ def get_session_file_name(working_dir, file_name_prefix):
     return fname
 
 
-def main(command='bash'):
+def main(command='screen'):
     config_file = find_config(os.getcwd())
     if config_file:
         wd = os.path.dirname(config_file)
