@@ -99,8 +99,12 @@ def main():
             'lines': lines,
         }
         json.dump(data, outfile)
+        try:
+            session_title = input("Session title: ")
+        except KeyboardInterrupt:
+            os.remove(pjoin(wd, session_fname))
+            exit(1)
 
-        session_title = input("Session title: ")
         if not session_title:
             session_title = session_fname.replace('.json', '')\
                                          .replace('_', ' ')\
