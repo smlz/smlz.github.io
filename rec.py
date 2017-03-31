@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-#from __future__ import print_function, division, absolute_import, unicode_literals
+from __future__ import print_function, division, absolute_import, \
+  unicode_literals
 
 import base64
 import collections
@@ -35,7 +36,8 @@ def get_session_file_name(working_dir, file_name_prefix):
         fname = '{}{:02d}.json'.format(file_name_prefix, last_num + 1)
     else:
         fname = file_name_prefix + '01.json'
-    open(pjoin(working_dir, fname), 'a').close()  # create file to prevent race condition
+    # create file to prevent race condition
+    open(pjoin(working_dir, fname), 'a').close()
     return fname
 
 
@@ -48,7 +50,8 @@ def main(command='screen'):
         config = {}
         wd = os.getcwd()
 
-    session_fname = get_session_file_name(wd, config.get('session_file_prefix', 'session_'))
+    session_fname = get_session_file_name(wd,
+      config.get('session_file_prefix', 'session_'))
     index_fname = config.get('index_file', 'index.html')
 
     session_dir = os.path.dirname(session_fname)
