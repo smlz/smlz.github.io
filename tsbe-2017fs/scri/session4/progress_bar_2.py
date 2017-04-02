@@ -6,7 +6,7 @@ import subprocess
 import time
 
 # Grosse Zahl
-total = 5 * 10**7
+total = 5 * 10**6
 
 block = '\u2588'
 
@@ -58,7 +58,24 @@ bar = [4] * (width + 1)
 # Graustufen:  weiss  hellgrau  grau      dunkelgrau  schwarz
 chars =       [' ',   '\u2591', '\u2592', '\u2593',   '\u2588']
 
+# k = len(bar) // 16
+
 while any(bar):   # Solange nicht alles weiss ist
+    # for i in range(len(bar)):
+    #     if bar[i]:
+    #         bar[i] -= 1
+    #         if bar[i] == 3:
+    #             break
+    # for i in reversed(range(len(bar))):
+    #     if bar[i]:
+    #         bar[i] -= 1
+    #         if bar[i] == 3:
+    #             break
+    #     # pos = random.randrange(len(bar))
+    #     # if bar[pos]:
+    #     #     bar[pos] -= 1
+    # k += len(bar) // 16
+
     # Alle Positionen die noch nicht weiss sind
     non_white = [i for (i, val) in enumerate(bar) if val > 0]
 
@@ -67,7 +84,8 @@ while any(bar):   # Solange nicht alles weiss ist
         # Wähle nur unter den Position, welche noch nicht weiss sind
         non_white,
         # Gewichtung: Je weiter vorne, desto eher werden sie heller gemacht
-        weights=reversed([i**2 for i, _ in enumerate(non_white, 4)]),
+        #weights=reversed([i**2 for i, _ in enumerate(non_white, 4)]),
+        weights=reversed([(i - (len(non_white)//2 + 4))**2 + 1 for i, _ in enumerate(non_white, 4)]),
         # Wähle 25% der Positionen
         k=min(int(width * 0.25), len(non_white))
     )
