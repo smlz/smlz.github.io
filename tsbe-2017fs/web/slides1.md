@@ -68,6 +68,23 @@ class: center
 * Listen und Tabellen
 
 ---
+## Minimales HTML-Dokument
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Seitentitle</title>
+  </head>
+  <body>
+    <!-- Seiteninhalt -->
+  </body>
+</html>
+```
+
+Dokumente überprüfen mit dem HTML Validator: https://validator.w3.org/
+---
 class: center, middle
 #Wettbewerb:<br/> 90er-Jahre Webseite
 ---
