@@ -1,6 +1,7 @@
 (function($) {
     var options = {
       highlightStyle: "default",
+      highlightLines: true,
       navigation: {
         scroll: false,
         touch: false,
