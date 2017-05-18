@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Scripting</title>
+  <link rel="stylesheet" href="/assets/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/jquery.fancybox.css">
+  <style>
+  body {
+    margin: 30px;
+  }
+  </style>
+</head>
+<body>
+  <ol class="breadcrumb">
+    <li><a href="../../">Home</a></li>
+    <li class="active">TSBE</li>
+    <li class="active">2017-FS</li>
+    <li class="active">Klasse: 17-A/B/C</li>
+  </ol>
+  <h1>Informatik 1</h1>
+  <p>&nbsp;</p>
+  <!--h4><a href="Kursblatt-SCRI-2017fs.pdf"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Kursblatt</a></h4-->
+  <ul class="list-group" style="width:200px; float: right; margin-top: -80px;">
+    <li class="list-group-item">Donnerstag</li>
+    <li class="list-group-item">2 Lektionen</li>
+    <li class="list-group-item">Zimmer 206</li>
+
+  </ul>
+
+  <div class="panel panel-default" style="clear:both;">
+    <div class="panel-heading">
+      <h2 class="panel-title">Program</h2>
+    </div>
+    <table class="table">
+      <tr><th>#</th><th>Datum</th><th>Thema</th><th>Folien</th><th>Terminal Sessions</th><th>Files</th><th>Bemerkungen</th></tr>
+      <tr>
+        <td><b>1</b></td>
+        <td>18. Mai 2017</td>
+        <td>Command Line Crash Course</td>
+        <td></td>
+        <td>
+          <!-- REC-TERM-SESSION -->
+        </td>
+        <td>
+          <!-- REC-FILES -->
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">Cheat-Sheets</h2>
+    </div>
+    <table class="table">
+      <tr><td>
+        <a href="bash_cheat_sheet.pdf"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Linux Bash Shell Cheat Sheet</a>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/assets/by-nc-sa.svg" /></a>
+      </td></tr>
+    </table>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">Online Ressourcen</h2>
+    </div>
+    <table class="table">
+      <tr><td><a href="https://learnpythonthehardway.org/book/appendixa.html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Command Line Crash Course (Zed Shaw)</a></td></tr>
+    </table>
+  </div>
+
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/assets/by-sa.svg" /></a>
+
+  <script src="/assets/jquery-2.0.0.min.js"></script>
+  <script src="/assets/bootstrap.min.js"></script>
+  <script src="/assets/jquery.fancybox.js"></script>
+  <script>
+  $(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        arrows: false,
+        keys: {
+          next   : [],
+          prev   : [],
+          play   : [],
+          close  : [27], // escape key
+	        toggle : [70]  // letter "f" - toggle fullscreen
+	      },
+        openEffect  : 'none',
+        closeEffect : 'none',
+        nextEffect  : 'none',
+        prevEffect  : 'none',
+        width: 720,
+        height: 460,
+        padding     : 2,
+        autoSize: false,
+    });
+  </script>
+</body>
+</html>
