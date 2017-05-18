@@ -36,8 +36,6 @@ def get_session_file_name(working_dir, file_name_prefix):
         fname = '{}{:02d}.json'.format(file_name_prefix, last_num + 1)
     else:
         fname = file_name_prefix + '01.json'
-    # create file to prevent race condition
-    open(pjoin(working_dir, fname), 'a').close()
     return fname
 
 
@@ -56,7 +54,12 @@ def main():
       config.get('session_file_prefix', 'session_'))
     index_fname = config.get('index_file', 'index.html')
 
-    session_dir = os.path.dirname(session_fname)
+    session_dir = os.path.dirname(pjoin(wd, session_fname))
+    if not os.path.isdir(pjoin(wd, session_dir)):
+        os.makedirs(pjoin(wd, session_dir))
+
+    # create session file to prevent race condition
+    open(pjoin(wd, session_fname), 'a').close()
 
     git_root = subprocess.check_output(['git', 'rev-parse',
                                         '--show-toplevel'])
