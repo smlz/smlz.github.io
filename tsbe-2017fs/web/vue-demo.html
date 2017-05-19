@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Testseite</title>
+  </head>
+  <body>
+    <h1>Unsere App</h1>
+
+    <div id="app">
+      <div v-if="nameGesetzt">
+        Lieber {{name}}, <br>
+        {{mitteilung}}<br>
+      </div>
+      Vorname: <input type="text" v-model="vorname"><br>
+      Nachname: <input type="text" v-model="nachname">
+      <button v-on:click="namenAktualisieren">Name aktualisieren</button>
+
+      <div v-for="irgendoeppis in icons">
+        <img v-bind:src="irgendoeppis.url"
+             v-bind:title="irgendoeppis.title">
+        <br>
+        {{irgendoeppis.title}}
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="vue-demo.js"></script>
+  </body>
+</html>
