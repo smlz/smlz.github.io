@@ -43,7 +43,7 @@ code {
 <script src="/assets/application.js"></script>
 <script src="/assets/highlight.min.js"></script>
 <script>
-(function() {
+$(document).ready(function() {
     var dataFile = $.urlParam("data");
 
     if (dataFile !== 0) {
@@ -55,13 +55,13 @@ code {
             $('pre code').each(function(i, block) {
                 hljs.highlightBlock(block);
             });
-        }).fail(function() {
+        }, 'text').fail(function() {
             alert("Failed to fetch '" + dataFile + "'");
         });
     } else {
         alert("No 'data' URL-parameter supplied");
     }
-})();
+});
 </script>
 </body>
 </html>
