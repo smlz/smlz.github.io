@@ -246,7 +246,7 @@ Spezifikation: https://docs.python.org/3.6/library/string.html#format-string-syn
 Beispiel:
 ```python
 firstname = input('Dein Vorname: ')
-nachname = input('Dein Nachname: ')
+lastname = input('Dein Nachname: ')
 
 print("Hallo", firstname, lastname)
 ```
