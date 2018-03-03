@@ -143,7 +143,7 @@ print("Hallo miteinander")  # Freundlich sein hilft immer!
 3. **Wahrheitswerte** `bool`: 
   * `True`, `False`
 
-4. **Tex** `str`:
+4. **Text** `str`:
   * Bsp.: `"Hallo"`, `'Guten Tag'`, `'Der CEO war "bescheiden"'`
 ---
 # Dingen einen Namen geben
