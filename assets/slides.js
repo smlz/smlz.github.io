@@ -5,7 +5,7 @@
       navigation: {
         scroll: false,
         touch: false,
-        click: true
+        click: false
       },
       ratio: "4:3",
       slideNumberFormat: '%current%',
