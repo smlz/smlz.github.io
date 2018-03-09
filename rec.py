@@ -12,18 +12,19 @@ import subprocess
 import sys
 import tempfile
 
-pjoin = os.path.join
+from os.path import join as pjoin
+from os.path import dirname, exists, isfile, isdir, relpath
 
 CONFIG_FILE_NAME = '.rec.json'
 
 def find_config(startdir):
     path = pjoin(startdir, CONFIG_FILE_NAME)
-    if os.path.exists(path):
+    if exists(path):
         return path
     elif (startdir == '/'):
         return None
     else:
-        return find_config(os.path.dirname(startdir))
+        return find_config(dirname(startdir))
 
 
 def get_session_file_name(working_dir, file_name_prefix):
@@ -42,7 +43,7 @@ def get_session_file_name(working_dir, file_name_prefix):
 def main():
     config_file = find_config(os.getcwd())
     if config_file:
-        wd = os.path.dirname(config_file)
+        wd = dirname(config_file)
         config = json.load(open(config_file))
     else:
         config = {}
@@ -54,8 +55,8 @@ def main():
       config.get('session_file_prefix', 'session_'))
     index_fname = config.get('index_file', 'index.html')
 
-    session_dir = os.path.dirname(pjoin(wd, session_fname))
-    if not os.path.isdir(pjoin(wd, session_dir)):
+    session_dir = dirname(pjoin(wd, session_fname))
+    if not isdir(pjoin(wd, session_dir)):
         os.makedirs(pjoin(wd, session_dir))
 
     # create session file to prevent race condition
@@ -64,7 +65,7 @@ def main():
     git_root = subprocess.check_output(['git', 'rev-parse',
                                         '--show-toplevel'])
     git_root = str(git_root, encoding='utf-8').strip()
-    server_path = '/' + os.path.relpath(wd, start=git_root) + '/'
+    server_path = '/' + relpath(wd, start=git_root) + '/'
 
     with tempfile.NamedTemporaryFile() as logfile,  \
          tempfile.NamedTemporaryFile() as timingfile, \
@@ -88,7 +89,7 @@ def main():
             notifier.process_events()
         wm.close()
         touched_files = [e.name for e in events
-                         if os.path.isfile(pjoin(wd, session_dir, e.name))]
+                         if isfile(pjoin(wd, session_dir, e.name))]
         touched_files = list(collections.OrderedDict.fromkeys(touched_files))
 
         columns = int(subprocess.check_output(['tput', 'cols']).strip())
