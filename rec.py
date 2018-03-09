@@ -136,9 +136,11 @@ def main():
                                                  title=session_title)
         data = data.replace(term_session_cursor,
                             term_session + term_session_cursor)
-        files = ''.join(files_templ.format(filename=f,
-                                           path=pjoin(session_dir, f))
-                          for f in added_files)
+        files = ''.join(files_templ.format(
+                            filename=pjoin(dirname(session_fname), f),
+                            title=f,
+                            path=pjoin(session_dir, f)
+                            ) for f in added_files)
         data = data.replace(files_cursor, files + files_cursor)
         indexfile.seek(0)
         indexfile.truncate()
