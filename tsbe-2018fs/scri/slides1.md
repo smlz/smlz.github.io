@@ -317,3 +317,7 @@ if alter >= 18 or alter < 65:
 if 16 < alter <= 65:  # Abkürzung
     print("An die Arbeit!")
 ```
+---
+# Aufgabe
+
+Ein kleines Text-Adventure-Game programmieren.
