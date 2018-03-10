@@ -13,8 +13,10 @@ assert(ziffer_als_wort(7) == 'sieben')
 def ziffern_als_wort(ziffern):
     woerter = []
     for x in ziffern:
-        print(x)
-  
+        woerter.append(ziffer_als_wort(x))
+
     return "-".join(woerter)
 
-assert(ziffern_als_wort([1, 2, 3]) == 'eins-zwei-drei')
+liste_mit_zahlen = [1, 2, 3]
+resultat = ziffern_als_wort(liste_mit_zahlen)
+assert(resultat == 'eins-zwei-drei')
