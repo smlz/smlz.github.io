@@ -12,7 +12,7 @@ assert(betrag(5) == 5)
 assert(betrag(-2.2) == 2.2)
 
 def durchschnitt(a, b):
-    return a
+    return (a + b) / 2
 
 assert(durchschnitt(4, 6) == 5)
 assert(durchschnitt(4.5, 5) == 4.75)
