@@ -1,4 +1,4 @@
-ziffern = ["null", "eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun"]
+ziffern = "null eins zwei drei vier fünf sechs sieben acht neun".split()
 
 def ziffer_als_wort(ziffer):
     if 0 <= ziffer < 10:
