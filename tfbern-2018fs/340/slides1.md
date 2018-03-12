@@ -1,8 +1,8 @@
 class: center, middle
-# Modul 304 - 1
+# Modul 340 - 1
 
 TFBern Frühlingssemester 2018  
-`http://smlz.github.io/tfbern-2018fs/304/`  
+`http://smlz.github.io/tfbern-2018fs/340/`  
 
 Marco Schmalz  
 `marco.schmalz@tfbern.ch`  
