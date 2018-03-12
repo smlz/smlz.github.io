@@ -1,0 +1,7 @@
+print("Guten Tag")
+print('Wie geht es euch?')
+print('*' * 30)
+print(1, 2, 3)
+print("a", 'b', "C")
+print("Eins", 2, 3.0)
+print("=" * 30)
