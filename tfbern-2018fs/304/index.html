@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Scripting</title>
+  <link rel="stylesheet" href="/assets/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/jquery.fancybox.css">
+  <style>
+  body {
+    margin: 30px;
+  }
+  </style>
+</head>
+<body>
+  <ol class="breadcrumb">
+    <li><a href="../../">Home</a></li>
+    <li class="active">TFBern</li>
+    <li class="active">2018-FS</li>
+    <li class="active">Klasse: INF-16</li>
+  </ol>
+  <h1>Modul 304</h1>
+  <p>&nbsp;</p>
+  <ul class="list-group" style="width:200px; float: right; margin-top: -110px;">
+    <li class="list-group-item">Montag</li>
+    <li class="list-group-item">5 Lektionen (12:50 - 17:00)</li>
+    <li class="list-group-item">üK-Modul</li>
+  </ul>
+  <div>&nbsp;</div>
+  <div class="panel panel-default" style="clear:both;">
+    <div class="panel-heading">
+      <h2 class="panel-title">Program</h2>
+    </div>
+    <table class="table">
+      <tr><th>#</th><th>Datum</th><th>Thema</th><th>Folien</th><th>Terminal Sessions</th><th>Files</th><th>Bemerkungen</th></tr>
+      <tr>
+        <td><b>1</b></td>
+        <td>12. März 2018</td>
+        <td>Einführung in Python: Tools, Zahlen, Strings und Entscheidungen</td>
+        <td><a class="btn btn-primary btn-xs" href="slides.html?source=slides1.md">HTML</a></td>
+        <td>
+          <!-- REC-TERM-SESSION -->
+        </td>
+        <td>
+          <!-- REC-FILES -->
+        </td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">Cheat-Sheets</h2>
+    </div>
+    <table class="table">
+      <tr><td><a href="cheatsheet-python3.pdf"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Cheat-Sheet: Python 3</a></td></tr>
+    </table>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">Online Python 3 Ressourcen</h2>
+    </div>
+    <table class="table">
+      <tr><td><a href="https://learnpythonthehardway.org/python3/"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Learn Python the Hard Way (Zed Shaw)</a></td></tr>
+      <tr><td><a href="http://www.ucs.cam.ac.uk/docs/course-notes/unix-courses/PythonAB/files/handout.pdf"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>An Introduction to Python for Absolute Beginners (Bob Dowling)</a></td></tr>
+      <tr><td><a href="https://web.archive.org/web/20171115075442/http://chimera.labs.oreilly.com/books/1230000000393/index.html"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>Python Cookbook (David Beazley) [Archived]</a></td></tr>
+    </table>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h2 class="panel-title">Support Files</h2>
+    </div>
+    <table class="table">
+      <!--tr><td><a href="team.csv"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>team.csv</a></td></tr-->
+      <!--tr><td><a href="mitglieder.csv"><span class="glyphicon glyphicon-link" aria-hidden="true"></span>mitglieder.csv</a></td></tr-->
+    </table>
+  </div>
+
+  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="/assets/by-sa.svg" /></a>
+
+  <script src="/assets/jquery-2.0.0.min.js"></script>
+  <script src="/assets/bootstrap.min.js"></script>
+  <script src="/assets/jquery.fancybox.js"></script>
+  <script>
+  $(".fancybox")
+    .attr('rel', 'gallery')
+    .fancybox({
+        arrows: false,
+        keys: {
+          next   : [],
+          prev   : [],
+          play   : [],
+          close  : [27], // escape key
+	        toggle : [70]  // letter "f" - toggle fullscreen
+	      },
+        openEffect  : 'none',
+        closeEffect : 'none',
+        nextEffect  : 'none',
+        prevEffect  : 'none',
+        width: 720,
+        height: 460,
+        padding     : 2,
+        autoSize: false,
+    });
+  </script>
+</body>
+</html>
