@@ -319,9 +319,35 @@ Praktisch ist vor allem der Zugriff auf das letzte Element einer Liste:
 >>> liste[-1]
 'e'
 ```
+---
+## @dabeaz
 
+David Beazley  
+Author des _Python Cookbook_ s und der _Python Essential Reference_.
+
+
+Built-in Super-Heroes:
+
+https://www.youtube.com/watch?v=lyDLAutA88s
 ---
 ## For-Schleife
+
+ Die `for`-Schleife ...
+```py
+for i in range(10):
+    print(i)
+```
+
+... ist das Pendant zur Java `for`-Schleife ...
+```java
+for (int i=0; i<10; i++) {
+    System.out.println(i);
+}
+```
+
+Der Name des Parameters `i` ist frei wählbar.
+---
+## For-Schleife über Listen
 
 Über Listen und listenähnliche Objekte kann iteriert werden:
 ```py
