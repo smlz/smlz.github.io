@@ -325,7 +325,7 @@ Praktisch ist vor allem der Zugriff auf das letzte Element einer Liste:
   
 Author des _Python Cookbook_ s und der _Python Essential Reference_.
 
-![David Beazley](dabeaz.jpg)
+![David Beazley](img/dabeaz.jpg)
 
 Built-in Super-Heroes: https://www.youtube.com/watch?v=lyDLAutA88s
 ---
