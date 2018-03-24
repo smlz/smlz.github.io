@@ -26,7 +26,9 @@ while running:
                 #print(f"     - {sprachen[code]}")
                 schoenere_sprachen.append(sprachen[code])
 
-            print(f"   * Amtssprachen:", ', '.join(schoenere_sprachen))
+            sprachen_string = ', '.join(schoenere_sprachen)
+
+            print(f"   * Amtssprachen: {sprachen_string}")
 
 
 
