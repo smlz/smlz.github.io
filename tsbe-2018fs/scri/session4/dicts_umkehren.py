@@ -7,7 +7,10 @@ de_fr = {
 }
 
 
-fr_de = {} # TODO
+fr_de = {}
+
+for de, fr in de_fr.items():
+    fr_de[fr] = de
 
 running = True
 while running:
