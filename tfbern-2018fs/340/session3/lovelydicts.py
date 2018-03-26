@@ -6,4 +6,9 @@ de_fr = {
     'Hund': 'chien',
 }
 
-print(de_fr['Hund'])
+fr_de = {}
+
+for key, val in de_fr.items():
+    fr_de[val] = key
+
+#print(fr_de)
