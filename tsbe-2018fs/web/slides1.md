@@ -33,7 +33,7 @@ Marco Schmalz
    _Pause_ ☕
 
 4. UX-Workshop
-  * Warum UX
+  * Warum UX?
   * Checkliste für gutes Design
   * Research-Phase
   * Design-Studio Gruppenarbeit
@@ -46,10 +46,29 @@ Marco Schmalz
 
 ---
 class: center
-# HTML als Baumstruktur
+# HTML als Baumstruktur (1)
 
 ![](html-tree.png)
 
+---
+# HTML als Baumstruktur (2)
+```html
+<html>
+  <head>
+    <title>Wilkommen</title>
+  </head>
+  <body>
+    <h1>Guten Tag</h1>
+    <a href="https://bademeister.com">Es gibt nur einen Gott</a>
+  </body>
+</html>
+```
+
+* Ein HTML-Element besteht aus einem Anfangs- (z.Bsp. `<strong>`) und einem End-Tag (`</strong>`)
+
+* Zwischen Anfangs- und End-Tag sind freier Text, aber auch weitere HTML-Tags erlaubt.
+
+* HTML-Tags können zusätzlich mehrere Attribute (Key-Value-Paare) enthalten. Zum Beispiel: `class="danger"`
 ---
 # Ressourcen zu HTML
 
@@ -104,13 +123,39 @@ class: center, middle
 
 * 2er- oder 3er-Teams
 
-* Idee erarbeiten: Zum Beispiel Wettplattform
+* Projekt-Idee erarbeiten
+  * Real-Time-Chat
+  * Voting-App
+  * Aquarium-Steuerung
+  * Tipp-Spiel
+  * ...
 
-* Beispiele
+* Im Web nach Inspirationen Suchen
+  * Emojis wie bei GitHub
+  * Suchvorschläge wie bei search.ch
+  * ...
 
-  * [Zum Runden Leder](http://blog.derbund.ch/zumrundenleder/blog/2014/06/23/115357/)
+* Technische Spielwiese aussuchen
+  * ELM
+  * WebGL
+  * ...
+  
+---
+# Screen Designs ...
 
-  * http://www.kicktipp.de/zrl14-15/tabellen
+.center[![UI Sketch](ui-sketches.jpg)]
+
+---
+# ... auf Papier
+
+
+** Auftrag **
+
+* Diskutiert, wie ihr eure Applikation in maximal 3 Screens unterbringt
+
+* Zeichnet die Screens auf Papier und spielt die Anwendung durch
+
+* Umsetzung ...
 
 ---
 # Anforderungen: Job Stories
@@ -133,19 +178,3 @@ damit ich rechtzeitig neue Säcke kaufen kann.
 
 * Zusatzinfos: [Replacing The User Story With The Job Story](https://medium.com/the-job-to-be-done/replacing-the-user-story-with-the-job-story-af7cdee10c27)
 
----
-# Screen Designs ...
-
-.center[![UI Sketch](ui-sketches.jpg)]
-
----
-# ... auf Papier
-
-
-** Auftrag **
-
-* Diskutiert, wie ihr eure Applikation in maximal 3 Screens unterbringt
-
-* Zeichnet die Screens auf Papier und spielt die Anwendung durch
-
-* Umsetzung ...
