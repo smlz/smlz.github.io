@@ -69,6 +69,8 @@ class: center
 * Zwischen Anfangs- und End-Tag sind freier Text, aber auch weitere HTML-Tags erlaubt.
 
 * HTML-Tags können zusätzlich mehrere Attribute (Key-Value-Paare) enthalten. Zum Beispiel: `class="danger"`
+
+* Einige Tags haben keinen Inhalt. `<hr/>`: Horizontale Linie, `<br/>`: Zeilenumbruch
 ---
 # Ressourcen zu HTML
 
