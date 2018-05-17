@@ -64,7 +64,7 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
-code.remark-inline-code, code.remark-code .remark-code-line {
+code.remark-inline-code {
   background-color: #F0F0F0;
 }
 div.center.middle code.remark-inline-code {
